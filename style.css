@@ -18,7 +18,7 @@ header img {
     width: 100%;
     display: block;
 }
-
+/*
 nav {
     background-color: darkcyan;
 
@@ -31,9 +31,28 @@ a.menu {
     text-decoration: none;
     text-align:center;
 }
+*/
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 25%;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkcyan;
+    padding: 15px 30px;
+    font-size: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
 
 a.menu:hover {
     background-color: crimson;
+    cursor: pointer;
 }
 
 .active {
@@ -80,4 +99,21 @@ footer{
     line-height:40px;
     text-align: center;
     margin-top: 0px;
+}
+
+@media (max-width:800px) {
+    nav a {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:500px) {
+    nav a {
+        width: 100%;
+    }
 }
